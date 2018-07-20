@@ -11,10 +11,32 @@ public class Sorting {
 			
 			if (s.compareTo(testArray[j]) > 0) {
 				String swap = testArray[i];
-				test 
+				testArray[i] = testArray[j];
+				testArray[j] = swap;
 			}
+	
+			}
+		
+		
 		}
-		}
+		
+		
+		for (int i = 0; i < testArray.length; i++) {
+			String s = testArray[i];
+			
+			for (int j = 1+i; j < testArray.length; j++) {
+				
+				if (s.compareTo(testArray[j]) > 0) {
+					String swap = testArray[i];
+					testArray[i] = testArray[j];
+					testArray[j] = swap;
+				}
+		
+				}
+			
+			
+			}
+		
 	}
 
 }
